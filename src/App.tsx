@@ -33,6 +33,7 @@ function App() {
             min="0"
             value={vols}
             onChange={(e) => setVols(Number(e.target.value))}
+            onFocus={(e) => e.target.select()}
             style={{
               width: "4rem",
               textAlign: "end",
